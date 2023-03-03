@@ -1,0 +1,47 @@
+{
+  "name": "weather-app-v1",
+  "version": "1.0.0",
+  "description": "This is the second version of Weather App",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "prettier --check . && eslint .",
+    "lint:fix": "prettier --write . && eslint . --fix",
+    "prepare": "husky install",
+    "startserver": "nodemon src/js/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Whitemple/Whitemple-weatherAppV2.git"
+  },
+  "author": "Iaroslv Khromei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Whitemple/Whitemple-weatherAppV2/issues"
+  },
+  "homepage": "https://github.com/Whitemple/Whitemple-weatherAppV2#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@types/jest": "^29.4.0",
+    "babel-jest": "^29.4.3",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.1",
+    "husky": "^8.0.3",
+    "jest": "^29.4.3",
+    "jest-environment-jsdom": "^29.4.3",
+    "lint-staged": "^13.1.2",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.4"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{js,css}": "prettier --write"
+  },
+  "dependencies": {
+    "node-static": "^0.7.11"
+  }
+}
